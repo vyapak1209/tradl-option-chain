@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { PARSE_SYSTEM_PROMPT } from './prompts/parse';
-import { PARSE_RESPONSE_SCHEMA } from './prompts/parse-schema';
+import { PARSE_SYSTEM_PROMPT } from './prompts/parse.js';
+import { PARSE_RESPONSE_SCHEMA } from './prompts/parse-schema.js';
 
 // Lazy client init — server should boot fine without ANTHROPIC_API_KEY;
 // only the /api/ai/parse route fails when the key is missing.
